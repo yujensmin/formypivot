@@ -1,0 +1,116 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.envelop {
+  position: relative;
+  width: 15rem;
+  height: 10rem;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.envelop__front-paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  border: 2px solid #967b5c;
+  border-radius: 0.7rem;
+  clip-path: polygon(100% 0%, 50% 70%, 0% 0%, 0% 100%, 100% 100%);
+  z-index: 300;
+}
+
+.envelop__back-paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #967b5c;
+  border-radius: 0.7rem;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 90%);
+  z-index: 100;
+}
+
+.envelop__up-paper {
+  position: absolute;
+  bottom: 97%;
+  width: 100%;
+  height: 20%;
+  background-color: #967b5c;
+  z-index: 400;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 81%);
+  cursor: pointer;
+}
+
+.envelop__sticker {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url("https://www.freepnglogos.com/uploads/heart-png/emoji-heart-33.png");
+  background-size: 2rem;
+  background-position: center;
+  background-color: #f9f9f9;
+  border: 0.3rem solid #e2e2e2;
+  cursor: pointer;
+}
+
+.envelop__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease-out, height 0.5s ease-out;
+}
+
+.love-notes {
+  padding: 10px;
+  text-align: center;
+}
+
+.note {
+  padding: 10px;
+  background-color: #ba9872;
+  border-radius: 10px;
+  margin: 5px 0;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+  height: 30%;
+  transition: all 0.3s ease;
+}
+
+.note.active {
+  background-color: #a38564;
+  opacity: 1;
+  height: 60%;
+}
+
+.menu-option {
+  position: relative;
+  z-index: 10; /* Garante que o botão esteja acima de outros elementos */
+  cursor: pointer; /* Certifica-se de que o botão tenha o cursor de clique */
+}
+

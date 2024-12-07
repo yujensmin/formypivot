@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styke.css">
+  <title>Carta Interativa</title>
+</head>
+<body class="scissors">
+  <!-- Menu Inicial -->
+  <div class="menu">
+    <!-- Frase acima dos botões -->
+    <div class="menu-header">
+      <p class="menu-text">BE MY BIRTHDAY PRESENT</p>
+      <!-- Imagem ou gif -->
+      <img src="https://64.media.tumblr.com/db09f614ad2ba9cd752770bf695a0a03/c3fdbebcf8b687ad-94/s250x400/4ac943a8c235fe45a67fecc21c4a790d4410aa64.gif" alt="gif" class="menu-image">
+    </div>
+    <!-- Botões de Opções -->
+    <button class="menu-option" id="option-2">Se não é clicável não é uma opção</button>
+    <button class="menu-option" id="option-1">Yes? Or Yes!</button>    
+  </div>
+
+  <!-- Envelope com carta -->
+  <div class="envelop" style="opacity: 0;"> <!-- Começa invisível -->
+    <div class="envelop__front-paper"></div>
+    <div class="envelop__back-paper"></div>
+    <div class="envelop__up-paper js-up-paper cursor"></div>
+    <div class="envelop__sticker js-sticker"></div> 
+    <div class="envelop__false-sticker"></div>
+    <div class="envelop__content js-envelop-content">
+      <div class="envelop__paper">
+        <textarea pre class="envelop__text-input" placeholder="Querida Katrina...
+        
+        Essa é a carta de alguém que você conquistou, não apenas como uma artista incrível, mas como a pessoa mais especial que já cruzou meu caminho. Com cada sorriso, cada palavra e cada momento que compartilhamos, você me mostrou que a vida pode ser muito mais bonita com você ao meu lado.
+
+        Por isso agradeço pelo privilégio de não ser apenas um fã ou um admirador agora. Sou alguém que tem a sorte de te conhecer mais de perto e que deseja estar ao seu lado em cada dia a dia. Rina, você é aquela que tem o dom de transformar qualquer instante em algo inesquecível, e eu quero ser a pessoa que estará sempre aqui para compartilhar esses momentos com você.
+        
+        Então, hoje, venho te perguntar com o coração aberto e cheio de esperança: Katrina, você aceita namorar comigo e fazer de nós dois a nossa melhor obra de arte?
+
+De um coração ansioso por sua resposta; Jian Zi Bàez."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
